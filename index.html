@@ -15,19 +15,50 @@
 
 <body>
 
-    <header class="">
 
-        <h1 class="text-center mt-5">Ma première page Bootstrap 5</h1>
-        <p class="text-center bt-5 fs-10">En redimensionnant la page dans le navigateur, on voit le responsive en action</p>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3 mt-5 sticky-top fixed-top">
-            <i class="ms-4 bi bi-bookmark-check-fill text-white"></i>
-            <a class="ms-3 text-secondary text-decoration-none" href="#">Lien 1</a>
-            <a class="ms-3 text-secondary text-decoration-none" href="#">Lien 2</a>
-            <a class="ms-3 text-secondary text-decoration-none" href="#">Lien 3</a>
-        </nav>
+    <h1 class="text-center mt-5">Ma première page Bootstrap 5</h1>
+    <p class="text-center bt-5 fs-10">En redimensionnant la page dans le navigateur, on voit le responsive en action</p>
 
-    </header>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3 mt-5 sticky-top">
+        <i class="ms-4 bi bi-bookmark-check-fill text-white"></i>
+        <a class="ms-3 text-secondary text-decoration-none" href="#">Lien 1</a>
+        <a class="ms-3 text-secondary text-decoration-none" href="#">Lien 2</a>
+        <a class="ms-3 text-secondary text-decoration-none" href="#">Lien 3</a>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="ms-4 bi bi-bookmark-check-fill text-white"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list text-white"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active ms-3 text-secondary text-decoration-none" aria-current="page" href="#">Lien 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-3 text-secondary text-decoration-none" href="#">Lien 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-3 text-secondary text-decoration-none" href="#">Lien 3</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle ms-3 text-secondary text-decoration-none" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
 
     <div class="container">
 
